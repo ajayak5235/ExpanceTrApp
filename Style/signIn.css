@@ -1,0 +1,13 @@
+body{
+    background-color: #f1f0f0;
+}
+.image{
+    border-radius: 25px;
+}
+.input{
+    border: 2px solid pink;
+    background-color: #ffffff;
+}
+.nav-h2{
+    color: #ffffff;
+}
