@@ -1,0 +1,29 @@
+body{
+    /* background-image: url('/Images/pngtree-scene-with-geometrical-forms-the-poster-model-minimal-background-render-image_452981.jpg'); */
+    background-color: rgb(255, 0, 0);
+}
+.thead {
+    background-color: #007bff;
+    /* Matching header color */
+    color: #fff;
+}
+thead:hover{
+    background-color: #6f42c1;
+}
+.downloaButton{
+    background-image: url('/Images/download-icon-download-sign-and-symbol-700-275474744.jpg');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+.signout{
+    background-image: url('/Images/logout.jpg');
+    width: 40px;
+    height: 40px;
+    background-size: cover
+}
+.header-name{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #ffffff;
+}
