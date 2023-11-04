@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/style/expense.css">
+    <title>Expense Tracker App</title>
+   
+   
+</head>
+
+<body>
+    <div class="contain">
+        <nav>
+            <div class="logo">Expense Tracker</div>
+            <div id="prime">
+                <button id="razor-pay" >Buy Premium</button>
+            </div>
+            <div>
+                <p id="userName" ></p>
+            <button class="btn2" onclick="redirectLogin()">Logout</button>
+            </div>
+            
+        </nav>
+        <form class="form" onsubmit="saveExpense(event)">
+            <label class="form-label">Expense Amount</label>
+            <input id="amount" type="number" name="amount" required />
+            <label class="form-label">Description</label>
+            <input id="description" type="text" name="description" required />
+            <label class="form-label">Choose a Category</label>
+            <select id="category" name="category" required>
+                <option value="">Select a Category</option>
+                <option value="Movie">Movie</option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Fuel">Fuel</option>
+            </select>
+            <button type="submit" class="btn">Add Expense</button>
+        </form>
+        
+   
+        <div id="message"></div>
+
+        <ul id="listofExpense" class="list-group"></ul>
+         <ul id="leaderboarddata" class="list-group"></ul> 
+        <ul id="downloadUrl" class="list-group"></ul>
+        <div id="pagination" class="pagination-container"></div> 
+    </div>
+ 
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="/script/expense.js"></script>
+</body>
+
+</html>

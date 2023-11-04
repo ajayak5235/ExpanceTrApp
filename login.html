@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/style/signin.css">
+    <title>Expense Login</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit="logInUser(event)">
+            <h1>login</h1>
+            <div class="inputbox">
+                <input type="text" id="email" name="email" required>
+                <label for="name">Email</label>
+            </div>
+            <div class="inputbox">
+                <input type="password" id="password" name="password" required>
+                <label for="name">Password</label>
+                
+            </div>
+            <button type="submit">LOGIN</button>
+            <div>
+                <a href="/forgotpassword.html">Forgot Password?</a>
+            </div>
+            
+            <div class="register">
+                <p>Don't have a account <a href="signup.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="/script/signup.js"></script>
+</body>
+</html>
